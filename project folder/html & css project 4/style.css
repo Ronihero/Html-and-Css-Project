@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Serif', serif;
+	box-sizing: border-box;
+}
+body {
+    min-width: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+	padding: 75px;
+    background: #c8e8e9;
+}
+.container {
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 40px 25px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .contact{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.laft_slide {
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+.details{
+    text-align: center;
+    margin: 14px;
+}
+
+.right_side {
+    width: 75%;
+    margin-left: 75px;
+}
+.details i {
+    font-size: 40px;
+    color: #3e2093;
+    margin-bottom: 5px;
+
+}
+.topic{
+    font-size: 20px;
+    font-weight: 500;
+}
+.laft_slide::before{
+    content: " ";
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    top: 50%;
+    background: #afafb6;
+    right: -15px;
+    transform: translateY(-50%);
+
+}
+
+.right_side::before{
+    content: " ";
+    position: absolute;
+    height: 30%;
+    width: 2px;
+    bottom: 40%;
+    background: #afafb6;
+    left: 320px;
+    transform: translatey( 10%);
+}
+
+.laft_slide .details .topic_one,
+.topic_two{
+
+    font-size: 14px;
+    color: #afafb6;
+}
+.topic_text{
+    font-size: 23px ;
+    font-weight: 600;
+    color: #3e2093;
+}
+.input_box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.input_box input[type="text"],
+.input_box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background: #f0f1f8;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 15px;
+    resize: none;
+}
+.message_box{
+    min-height: 110px;
+    margin-top: 6px;
+}
+input[type="button"] {
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    background: #3e2093;
+    outline: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+input[type="button"]:hover{
+    background: #5029bc;
+}

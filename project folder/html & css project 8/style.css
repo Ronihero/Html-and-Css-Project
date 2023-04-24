@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.text {
+    font-size: 3rem;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+}
+.tools {
+    position: relative;
+    cursor: pointer;
+}
+
+.tools span {
+    position: absolute;
+    background-color: #000;
+    transition: 0.5s;
+}
+.hozizantical{
+    width: 100%;
+    height: 5px;
+}
+.hozizantical.fst {
+    top: 0;
+    left: 0;
+}
+
+.hozizantical.snd {
+    right: 0;
+    bottom: 0;
+}
+
+.tools:hover .hozizantical.fst{
+    width: 0px;
+    transform: translateX(-1000px);
+}
+
+.tools:hover .hozizantical.snd{
+    width: 0px;
+    transform: translateX(1000px);
+}
+
+
+.vatical {
+    height: 0%;
+    width: 6px;
+}
+
+.vatical.fst {
+    top: 0;
+    left: 0;
+    transform: translate(-0.75rem, -1000px);
+}
+
+.vatical.snd {
+    margin: 0;
+    right: 0;
+    transform: translate(-0.75rem, 1000px);
+}
+
+.tools:hover .vatical.fst{
+    height: 100%;
+    transform: translate(-0.75rem, 0px);
+}
+.tools:hover .vatical.snd{
+    height: 100%;
+    transform: translate(0.75rem, -70px);
+}

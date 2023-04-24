@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Dongle', sans-serif;
+}
+.image_logo{
+    background: url(heroimage.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.hero_warapp {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero_warapp h1 {
+    font-size: 50px;
+    text-align: center;
+}
+.hero_warapp p{
+    font-size: 23px;
+}
+.form_code {
+    text-align: center;
+}
+
+.form_code .post_code{
+    width: 80%;
+    display: block;
+    border-radius: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .6rem;
+    border: none;
+    outline: none;
+}
+form.form_code button {
+    width: 40%;
+   
+    border: none;
+    display: inline-block;
+    background-color: #00bab1;
+    border: navajowhite;
+    color: white;
+    padding: .6rem;
+    border-radius: .3rem;
+    margin: 1rem auto 0rem;
+}
+.product{
+    width: 80%;
+    margin-top: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product_list_iteam {
+    float: left;
+    width: 32%;
+    margin-left: .5rem;
+}
+.img_res{
+    max-width: 100%;
+}
+@media screen and (max-width: 700px) {
+    .product_list_iteam{
+        float: none;
+        width: 100%;
+    }
+    .hero_warapp{
+      width: 100%;
+      margin-top: none;
+    }
+    
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Serif', serif;
+	box-sizing: border-box;
+	
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f4f4f4;
+}
+.image {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	padding: 3px;
+    margin-bottom: 10px;
+	background-color: #4070fa;
+}
+.profile-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+.profile-card::before{
+	content: " ";
+	position: absolute;
+	height: 36%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 24px 24px 0 0;
+	background-color: #4070fa;
+}
+
+.image .profile-img {
+    height: 100%;
+	width: 100%;
+	object-fit: cover;
+    border-radius: 50%;
+	border: 3px solid #fff;
+
+}
+
+.text-data {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #333;
+
+
+	
+
+}
+.text-data .name {
+	font-size: 22px;
+	font-weight: 800;
+
+
+	
+}
+.text-data .job {
+	font-size: 15px;
+	font-weight: 400;
+	
+}
+.media-button{
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+.link{
+	text-decoration: none;
+	background-color: #4070fa;
+	margin: 0 8px;
+	height: 34px;
+	width: 34px;
+	border-radius: 50%;
+	display: flex;
+	font-size: 18px;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+
+}
+
+.buttons{
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+
+}
+.button {
+	background-color: #4070fa;
+	padding: 8px 24px;
+	margin: 0 10px;
+	border-radius: 24px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+	transition: all 0.3s ease;
+}
+.button:hover{
+	background-color: #0e4bf1;
+}
+.analytice{
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+
+
+}
+.data {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+.data:last-child{
+	border-right: none;
+}
+.data i {
+	font-size: 20px;
+	margin-right: 7px;
+}
